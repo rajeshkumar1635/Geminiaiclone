@@ -53,7 +53,7 @@ export default function Main() {
     )}
 </div>
                 </div>}
-        
+        <br></br>
             <div className='main-bottom'>
                <div className='search-box'>
                 <input onChange={(e)=>setInput(e.target.value)} value={input}type='text' placeholder='Enter a prompt'/>
@@ -63,6 +63,7 @@ export default function Main() {
                     {input?<img onClick={()=>onSent(input)} src={assets.send_icon} alt=""/>:null}
                 </div>
                 </div> 
+
                 <p className='bottom-info'>
                     &copy; {new Date().getFullYear()} RajeshKumar . All rights reserved.
                 </p>
