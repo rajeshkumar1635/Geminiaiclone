@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rajeshkumar1635.github.io/Geminiaiclone/static/css/main.6a7aa49b.css",
-    "main.js": "/rajeshkumar1635.github.io/Geminiaiclone/static/js/main.de8ffe58.js",
-    "static/js/453.ae4174d7.chunk.js": "/rajeshkumar1635.github.io/Geminiaiclone/static/js/453.ae4174d7.chunk.js",
-    "static/media/gallery_icon.png": "/rajeshkumar1635.github.io/Geminiaiclone/static/media/gallery_icon.1da1416be560b7741007.png",
-    "static/media/github_icon.png": "/rajeshkumar1635.github.io/Geminiaiclone/static/media/github_icon.50dd786674f991402395.png",
-    "index.html": "/rajeshkumar1635.github.io/Geminiaiclone/index.html",
-    "main.6a7aa49b.css.map": "/rajeshkumar1635.github.io/Geminiaiclone/static/css/main.6a7aa49b.css.map",
-    "main.de8ffe58.js.map": "/rajeshkumar1635.github.io/Geminiaiclone/static/js/main.de8ffe58.js.map",
-    "453.ae4174d7.chunk.js.map": "/rajeshkumar1635.github.io/Geminiaiclone/static/js/453.ae4174d7.chunk.js.map"
+    "main.css": "/Geminiaiclone/static/css/main.6a7aa49b.css",
+    "main.js": "/Geminiaiclone/static/js/main.72e02b51.js",
+    "static/js/453.ae4174d7.chunk.js": "/Geminiaiclone/static/js/453.ae4174d7.chunk.js",
+    "static/media/gallery_icon.png": "/Geminiaiclone/static/media/gallery_icon.1da1416be560b7741007.png",
+    "static/media/github_icon.png": "/Geminiaiclone/static/media/github_icon.50dd786674f991402395.png",
+    "index.html": "/Geminiaiclone/index.html",
+    "main.6a7aa49b.css.map": "/Geminiaiclone/static/css/main.6a7aa49b.css.map",
+    "main.72e02b51.js.map": "/Geminiaiclone/static/js/main.72e02b51.js.map",
+    "453.ae4174d7.chunk.js.map": "/Geminiaiclone/static/js/453.ae4174d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a7aa49b.css",
-    "static/js/main.de8ffe58.js"
+    "static/js/main.72e02b51.js"
   ]
 }
