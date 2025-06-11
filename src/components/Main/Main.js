@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <div className='main'>
          <div className='nav'>
-            <p>Gemini</p>
+            <p>Welcome to AI platform</p>
             <img src={assets.user_icon} alt=""/>
          </div>
       <div className='main-container'>
@@ -64,10 +64,18 @@ export default function Main() {
                 </div>
                 </div> 
                 <p className='bottom-info'>
-                    
+                    &copy; {new Date().getFullYear()} RajeshKumar . All rights reserved.
                 </p>
+                <div className='profile-links' style={{ textAlign: 'center', margin: '10px 0' }}>
+        <a href="https://github.com/rajeshkumar1635" target="_blank" rel="noopener noreferrer" style={{margin: '0 10px'}}>
+            <img src={assets.github_icon} alt="GitHub" style={{width: '24px', verticalAlign: 'middle'}} />
+        </a>
+        <a href="https://www.linkedin.com/in/rajesh-kumar-kurapati-040a29183/" style={{margin: '0 10px'}}>
+            <img src={assets.linkedin_icon} alt="LinkedIn" style={{width: '24px', verticalAlign: 'middle'}} />
+        </a>
             </div>
         </div>
+    </div>
     </div>
   )
 }
