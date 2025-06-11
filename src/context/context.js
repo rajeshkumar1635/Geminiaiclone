@@ -10,19 +10,44 @@ const [prevPrompts, setPrevPrompts] = useState([]);
 const [showResult, setShowResult] = useState(false);
 const [loading, setLoading] = useState(false);
 const [resultData  , setResultData] = useState("");
+ const delayPara =(index,nextword)=>{
+    setTimeout(function(){
+        setResultData((prevData) => prevData + nextword);
+    }, 75* index);
+ }
+    const onSent = async (prompt) => {
+    setResultData("");
+    setLoading(true);
+    setShowResult(true);
 
-    const onSent=async (input)=>{
-        setResultData("");
-        setLoading(true);
-        setShowResult(true);
-        setRecentPrompt(input);
-       console.log("Sending prompt:", input);
-    const response = await main(input);
-    console.log("API response:", response);
-       setResultData(response);
-       setLoading(false);
-       setInput("");
+    // Always add the prompt (or input) to prevPrompts
+    setPrevPrompts((prev) => [...prev, prompt ?? input]);
+    setRecentPrompt(prompt ?? input);
+
+    let res1;
+    if (prompt !== undefined) {
+        res1 = await main(prompt);
+    } else {
+        res1 = await main(input);
     }
+
+    let responseArray = res1.split("**");
+    let newArray = " ";
+    for (let i = 0; i < responseArray.length; i++) {
+        if (i === 0 || i % 2 !== 1)
+            newArray += responseArray[i];
+        else
+            newArray += "<b>" + responseArray[i] + "</b>";
+    }
+    let newResponse2 = newArray.split("*").join("</br>");
+    let newResponsearray2 = newResponse2.split(" ");
+    for (let i = 0; i < newResponsearray2.length; i++) {
+        delayPara(i, newResponsearray2[i] + " ");
+    }
+
+    setLoading(false);
+    setInput("");
+}
   
     const contextValue={
         prevPrompts,

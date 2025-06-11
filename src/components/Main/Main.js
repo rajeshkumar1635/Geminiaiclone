@@ -46,13 +46,13 @@ export default function Main() {
                     </p>
                     </div>
                     <div className='result-data'>
-                        <img src={assets.gemini_icon} alt="" />
-                        {loading? <div className='loader'><hr/>
-                        <hr/></div>
-                        :<p>{resultData}</p>}
-                        {/* <p dangerouslySetInnerHTML={{__html:resultData}}> */}
-                        
-                        </div>
+    <img src={assets.gemini_icon} alt="" />
+    {loading ? (
+        <div className='loader'><hr/><hr/></div>
+    ) : (
+        <p dangerouslySetInnerHTML={{ __html: resultData }} />
+    )}
+</div>
                 </div>}
         
             <div className='main-bottom'>
