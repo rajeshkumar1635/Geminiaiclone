@@ -26,25 +26,26 @@ async function main(prompt) {
         },
     ];
 
+    // ...existing code...
     try {
         const response = await ai.models.generateContentStream({
             model,
             config,
             contents,
         });
-console.log(response); // Check response structure
 
-// Asynchronously iterate through response if needed
+       let result = '';
 for await (const chunk of response) {
-    console.log(await chunk.text); // Ensure chunk.text() is called
+    const text = chunk.text || "";
+    console.log(text);
+    result += text;
 }
 
-// Properly await response.text()
-return await response.text;
-// Return the full response text
+        return result; // Return the full response text
     } catch (error) {
         console.error('Error generating AI response:', error);
     }
+// ...existing code...
 }
 
 export default main;
