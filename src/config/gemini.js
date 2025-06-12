@@ -1,4 +1,4 @@
-const Apikey="AIzaSyBI-LoMfFBnAzH_RQnQdbi2Aa_Yc6cUJnk"
+const Apikey="your api key"
 // Install dependencies before running:
 // npm install @google/genai mime
 // npm install -D @types/node
